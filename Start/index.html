@@ -6,6 +6,7 @@
     <title>Todo-List Example - Lesson 4</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="todos-logic.js"></script>
 </head>
 
 <body>
@@ -13,7 +14,10 @@
         <h1>My Todo List</h1>
         <div id="new-todo-form">
             <input id="new-todo-input" type="text" />
-            <button>Create Todo</button>
+            <button onclick="createTodo()">Post Create Todo</button>
+            <button onclick="getTodo()">GET Todo</button>
+            <button onclick="getForecast()">getForecast</button>
+
         </div>
         <div id="todos-list">
             <p>Loading...</p>
